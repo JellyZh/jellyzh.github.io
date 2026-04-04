@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiale Zhao - Homepage</title>
     <style>
-        /* 全局基础样式 (完全模仿学术风的简洁) */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.5;
@@ -15,7 +14,6 @@
             padding: 0;
         }
 
-        /* 链接样式 (使用学术界偏爱的深蓝色) */
         a {
             color: #0366d6;
             text-decoration: none;
@@ -24,7 +22,6 @@
             text-decoration: underline;
         }
 
-        /* 核心布局：左侧固定侧边栏，右侧自适应主内容 */
         .wrapper {
             display: flex;
             max-width: 1000px;
@@ -32,7 +29,6 @@
             padding: 2rem;
         }
 
-        /* --- 左侧侧边栏 --- */
         .sidebar {
             width: 260px;
             flex-shrink: 0;
@@ -40,7 +36,6 @@
             text-align: center;
         }
 
-        /* 模仿参考图：圆形、带边框的头像 */
         .profile-photo {
             width: 160px;
             height: 160px;
@@ -52,7 +47,6 @@
             margin-bottom: 1rem;
         }
 
-        /* 名字样式 */
         .sidebar h1 {
             font-size: 1.8rem;
             margin: 0 0 0.5rem 0;
@@ -60,7 +54,6 @@
             color: #000;
         }
 
-        /* 职位/学校信息 */
         .sidebar .title-info {
             font-size: 1rem;
             color: #555;
@@ -68,7 +61,6 @@
             line-height: 1.4;
         }
 
-        /* 联系方式区域 (字体较小，靠左对齐) */
         .contact-box {
             text-align: left;
             font-size: 0.9rem;
@@ -80,7 +72,6 @@
         .contact-box p { margin: 0 0 0.4rem 0; }
         .contact-box strong { color: #333; }
 
-        /* 学术链接区域 (如 Google Scholar, GitHub 等) */
         .social-links {
             text-align: left;
             font-size: 0.95rem;
@@ -88,13 +79,11 @@
         .social-links ul { list-style: none; padding: 0; margin: 0; }
         .social-links li { margin-bottom: 0.5rem; }
 
-        /* --- 右侧主内容区 --- */
         .main-content {
             flex-grow: 1;
             padding-left: 1rem;
         }
 
-        /* 学术主页常用的二级标题样式 (下划线) */
         h2 {
             font-size: 1.5rem;
             font-weight: 600;
@@ -109,20 +98,17 @@
             margin-bottom: 2.5rem;
         }
 
-        /* About Me 区域样式 */
         #about p {
             margin-top: 0;
             font-size: 1rem;
             color: #333;
         }
 
-        /* --- 论文/项目列表样式 --- */
         .pub-item {
             display: block;
             margin-bottom: 1.5rem;
         }
 
-        /* 论文标题 (加粗) */
         .pub-title {
             font-weight: bold;
             color: #000;
@@ -130,7 +116,6 @@
             display: block;
         }
 
-        /* 作者列表 (加粗自己) */
         .pub-authors {
             font-size: 0.95rem;
             color: #444;
@@ -140,7 +125,6 @@
             font-weight: bold;
         }
 
-        /* 会议/期刊/奖项信息 (斜体) */
         .pub-venue {
             font-size: 0.95rem;
             font-style: italic;
@@ -148,7 +132,6 @@
             margin-bottom: 0.3rem;
         }
 
-        /* 论文相关链接 [Paper]... */
         .pub-links {
             font-size: 0.9rem;
         }
@@ -156,7 +139,6 @@
             margin-right: 0.3rem;
         }
 
-        /* 移动端适配 */
         @media (max-width: 768px) {
             .wrapper { flex-direction: column; padding: 1.5rem; }
             .sidebar { width: 100%; padding-right: 0; margin-bottom: 2rem; border-right: none; }
