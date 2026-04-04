@@ -4,7 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiale Zhao - Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
+        .top-nav {
+            border-bottom: 1px solid #eaecef;
+            background-color: #ffffff;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .top-nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            text-align: left;
+        }
+
+        .homepage-link {
+            color: #5c88c7;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1rem;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.5;
@@ -70,7 +93,13 @@
             margin-bottom: 1.5rem;
         }
         .contact-box p { margin: 0 0 0.4rem 0; }
-        .contact-box strong { color: #333; }
+        
+        .contact-box i, .social-links i {
+            width: 20px;
+            text-align: center;
+            margin-right: 6px;
+            color: #555; 
+        }
 
         .social-links {
             text-align: left;
@@ -149,6 +178,12 @@
 </head>
 <body>
 
+    <header class="top-nav">
+        <div class="top-nav-container">
+            <a href="index.html" class="homepage-link">Homepage</a>
+        </div>
+    </header>
+
     <div class="wrapper">
         <aside class="sidebar">
             <img src="avatar.jpg" alt="Jiale Zhao" class="profile-photo" onerror="this.src='https://via.placeholder.com/160C/O%20https://placeholder.com/';">
@@ -162,15 +197,17 @@
             </div>
 
             <div class="contact-box">
-                <p><strong>Email:</strong> zh2841871831@gmail.com</p>
-                <p><strong>Address:</strong> 广州市，中国</p>
+                <p><i class="fa-solid fa-envelope"></i>zh2841871831@gmail.com</p>
+                <p><i class="fa-brands fa-weixin"></i>zh2841871831</p>
+                <p><i class="fa-solid fa-location-dot"></i>广州市，中国</p>
             </div>
 
             <div class="social-links">
                 <ul>
-                    <li><a href="https://scholar.google.com.hk/citations?user=JCVGLDQAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a></li>
-                    <li><a href="https://github.com/JellyZh" target="_blank">GitHub (@JellyZh)</a></li>
-                    <li><a href="赵嘉乐.pdf" target="_blank">CV</a></li>
+                    <li><a href="https://scholar.google.com.hk/citations?user=JCVGLDQAAAAJ&hl=zh-CN" target="_blank"><i class="fa-solid fa-graduation-cap"></i>Google Scholar</a></li>
+                    <li><a href="https://github.com/JellyZh" target="_blank"><i class="fa-brands fa-github"></i>GitHub (@JellyZh)</a></li>
+                    <li><a href="https://space.bilibili.com/299546262" target="_blank"><i class="fa-brands fa-bilibili"></i>Bilibili</a></li>
+                    <li><a href="赵嘉乐.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>CV</a></li>
                 </ul>
             </div>
         </aside>
